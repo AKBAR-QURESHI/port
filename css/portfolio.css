@@ -165,13 +165,17 @@ button{
     cursor: pointer;
     font-size: 25px;
     font-weight: 400;
-    color: #fff;
     background-color: #3d535f;
     padding: 8px 14px;
     margin: 40px 5px;
     letter-spacing: 2px;
     text-transform: capitalize;
     box-shadow: 0px 15px 10px rgba(0,0,0,0.4);
+}
+
+button a{
+    color: #fff;
+    
 }
 
 button:hover{

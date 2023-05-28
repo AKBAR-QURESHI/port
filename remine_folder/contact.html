@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact PAGE</title>
+    <link rel="stylesheet" href="css/portfolio.css">
+    <script src="https://kit.fontawesome.com/ab9fce771d.js" crossorigin="anonymous"></script
+   
+</head>
+<body>
+    <nav>
+        <div class="logo">FOLIO<b>.</b></div>
+        <ul class="navitems">
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="myfunction()"></i> 
+    </nav>
+    <section class="Contact">
+        <div class="container">
+            <h2 class="about-head">
+                Contact
+            </h2>
+          <div class="row">
+            <div class="contact-left">
+              
+            </div>
+  
+            <div class="contact-right">
+              <form onsubmit="sendmail(); reset(); return false;">
+                <input type="text" id="name" name="name" placeholder="your Name">
+                <input type="email" id="email" name="email" placeholder="your email">
+                <textarea name="Message" id="message" rows="6" placeholder="your Message"></textarea> 
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+  
+        <div class="copyright">
+          <p>copyright @ Made by AKBAR <i class="fa-solid fa-heart"></i> WEV DEVELOPER<p>
+        </div>
+  
+      </div>
+    </section>
+
+</body>
+</html>

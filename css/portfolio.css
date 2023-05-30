@@ -83,7 +83,7 @@ b{
 
 
 
-.wrappr{
+.header-details{
     width: 100%;
     height: calc(100vh-80px);
     display: flex;
@@ -93,7 +93,7 @@ b{
     overflow: hidden;
 }
 
-.wrappr::before{
+.header-details::before{
     position: absolute;
     content: '';
     height: 500px;
@@ -486,6 +486,25 @@ form input,form textarea{
     color: #ff004f;
 }
 
+.contact-left{
+    padding: 2vw 2vw;
+
+}
+
+.social-icons a{
+    color: #3d535f;
+    display: block;
+    font-size: 40px;
+    margin: 5vw;
+    margin-top: auto;
+    transition:transform 0.5s;
+}
+
+.social-icons a:hover{
+    color: #7f00ff;
+    transform: translateY(-5px);
+}
+
 
 
 /*--------------------lets create responsive------------------------*/
@@ -541,7 +560,7 @@ form input,form textarea{
     }
 
     
-    .wrappr,.btns{
+    .header-details,.btns{
         flex-wrap: wrap;
     }
 

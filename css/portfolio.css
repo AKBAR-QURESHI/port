@@ -556,7 +556,7 @@ form input,form textarea{
     }
 
     .logo{
-        font-size: 7vw;
+        font-size: 8vw;
         margin-top: 5px;
         margin-left: -35px;
     }
@@ -613,7 +613,15 @@ form input,form textarea{
        
     }
 
-    
+    .header-details {
+        margin-top: 45px;
+      }
+
+    .header-details::before {
+        height: 400px;
+        width: 400px;
+    }
+
     .header-details,.btns{
         flex-wrap: wrap;
     }

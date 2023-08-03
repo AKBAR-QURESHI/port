@@ -1,3 +1,12 @@
+const bar = document.getElementsByClassName(".fa-bars");
+const menu = document.querySelector(".navitems");
+
+bar.addEventListener("click",()=>{
+    menu.style.display == "none";
+
+})
+
+
 function sendmail(){
     var params = {
         name:document.getElementById("name").value,
@@ -21,3 +30,14 @@ emailjs.send(serviceID,templateID,params)
     .catch((err) => console.log(err));
 
 }
+
+// function myfunction(){
+//     const menu = document.querySelector(".navitems");
+  
+   
+//     if(menu.style.display == "flex"){
+//         menu.style.display == "none";
+//     }
+//     else{
+//         menu.style.display == "flex";
+//     }

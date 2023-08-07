@@ -2,9 +2,9 @@ const bar = document.getElementsByClassName(".fa-bars");
 const menu = document.querySelector(".navitems");
 
 bar.addEventListener("click",()=>{
-    menu.style.display == "none";
+    menu.style.display == "flex";
 
-})
+});
 
 
 function sendmail(){
@@ -41,3 +41,5 @@ emailjs.send(serviceID,templateID,params)
 //     else{
 //         menu.style.display == "flex";
 //     }
+
+

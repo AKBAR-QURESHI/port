@@ -75,7 +75,7 @@ b{
 }
 
 .navitems li a{
-    font-size: 25px;
+    font-size: 24px;
     color: #3d535f;
     letter-spacing: 3px;
     text-decoration: none;
@@ -83,9 +83,25 @@ b{
     cursor: pointer;
 }
 
-.navitems li a:hover{
-    color:#7f00ff;
+.nav-bar ul li a{
+    padding: 8px 12px;
+    border-radius: 20px;
+
 }
+
+.nav-bar ul li a:hover{
+    background-color: #7f00ff;
+    color: white;
+}
+
+.nav-bar ul li a.active{
+    background-color: #7f00ff;
+    color: white;
+}
+
+/* .navitems li a:hover{
+    color:#7f00ff;
+} */
 
 
 
@@ -474,6 +490,10 @@ em{
    
 }
 
+.project-details ul li{
+    margin: 1rem;
+}
+
 .project-details h4{
     font-weight: 600;
     margin-bottom: 25px;
@@ -538,6 +558,7 @@ form input,form textarea{
     margin: 5vw;
     margin-top: auto;
     transition:transform 0.5s;
+    cursor: pointer;
 }
 
 .social-icons a:hover{
@@ -642,6 +663,7 @@ form input,form textarea{
         position: relative;
         left: 5vw;
         top: -3vw;
+        display: flex;
     }
 
     .imgbox img{
@@ -713,5 +735,43 @@ form input,form textarea{
         padding: 0px 0px;
     }
 
+    .text-align-center{
+        margin-left: -6rem;
+        margin-top: 15vw;
+    }
 
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .resume-col1,.resume-col2 {
+        width: 100%;
+    }
+
+    .skills .progress .val {
+        font-size: 1.3rem;
+    }
+
+    .progress span{
+        font-size: 1.3rem;
+    }
+
+    .social-icons{
+        display: flex;
+        padding-left: 0.5rem;
+    }
+
+    .btn2{
+       margin-left: 28vw;
+    }
+
+    .resume{
+        padding-top: 4rem;
+    }
+
+    .social-icons a:hover{
+        color: #7f00ff;
+        transform: translateY(-5px);
+    }
 }

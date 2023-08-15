@@ -7,9 +7,12 @@
 }
 
 body{
-    background-color: #f3f5f8;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(254, 254, 254, 0.7);
+    /* background-color: #181818; */
+    /* background-color: #f3f5f8; */
     height: 100%;
-
+    background-image: url(../img/header.jpg);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,7 +21,8 @@ h1, h2, h3, h4, h5, h6 {
 
 header{
     width: 100%;
-    background-color: #f3f5f8;
+    /* background-color: #000; */
+    /* background-image: url(../img/header.jpg); */
 }
 
 .col0 span{
@@ -45,7 +49,7 @@ nav{
 .logo{
     font-size: 40px;
     font-weight: 800;
-    color: #3d535f;
+    color: #FEFEFE;
     letter-spacing: 3px;
     cursor: pointer;
     text-transform: uppercase;
@@ -62,7 +66,7 @@ nav{
 
 b{
     font-size: 70px;
-    color: #7f00ff;
+    color: #FF4A17;
 }
 .navitems{
     display: flex;
@@ -76,7 +80,7 @@ b{
 
 .navitems li a{
     font-size: 24px;
-    color: #3d535f;
+    color: white;
     letter-spacing: 3px;
     text-decoration: none;
     text-transform: capitalize;
@@ -90,19 +94,15 @@ b{
 }
 
 .nav-bar ul li a:hover{
-    background-color: #7f00ff;
+    background-color: #FF4A17;
     color: white;
+    transition: 0.2s;
 }
 
 .nav-bar ul li a.active{
-    background-color: #7f00ff;
+    background-color: #FF4A17;
     color: white;
 }
-
-/* .navitems li a:hover{
-    color:#7f00ff;
-} */
-
 
 
 .header-details{
@@ -123,7 +123,7 @@ b{
     border-radius: 50%;
     left: -12%;
     top: 20%;
-    background: linear-gradient(45deg,#7f00ff,pink);
+    background: linear-gradient(45deg,#FF4A17,pink);
 }
 
 
@@ -143,7 +143,7 @@ b{
     position: relative;
     font-size: 35px;
     letter-spacing: 5px;
-    color: #3d535f;
+    color: white;
 }
 
 .topline::after{
@@ -152,18 +152,18 @@ b{
     height: 4px;
     width: 45px;
     bottom: 10px;
-    background-color: #7f00ff;
+    background-color: #FF4A17;
 }
 
 h1{
     display: block;
     font-size: 7em;
     font-weight: 600;
-    color: #3d535f;
+    color: white;
 }
 
 .multitext{
-    color: #7f00ff;
+    color: #FF4A17;
     text-transform: capitalize;
 }
 
@@ -172,7 +172,7 @@ h1{
     width: 90%;
     font-size: 40px;
     font-weight: 600;
-    color: #3d535f;
+    color: white;
 }
 
 .btns{
@@ -188,12 +188,14 @@ button{
     font-size: 25px;
     font-weight: 400;
     color: #fff;
-    background-color: #3d535f;
+    background-color: #181818;
     padding: 8px 14px;
     margin: 40px 5px;
     letter-spacing: 2px;
     text-transform: capitalize;
-    box-shadow: 0px 15px 10px rgba(0,0,0,0.4);
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.863);
+    transition: 0.2s;
+    border-radius: 0.8rem;
 }
 
 button .download-btn{
@@ -205,7 +207,7 @@ button .download-btn{
 }
 
 button:hover{
-    background-color: #7f00ff;
+    background-color: #FF4A17;
 }
 
 .imgbox{
@@ -278,7 +280,7 @@ button:hover{
     display: block;
     width: 40px;
     height: 3px;
-    background: #7f00ff;
+    background: #FF4A17;
     left: calc(50% - 20px);
    
 }
@@ -310,6 +312,7 @@ button:hover{
     position: relative;
     left: 50px;
     top: 16px;
+    list-style-type: none;
     
 }
 
@@ -319,10 +322,10 @@ button:hover{
     margin: 10px;
     color: black;
     border-radius: 15px;
-    border:1px solid #f3f5f8;
+    /* border:1px solid #f3f5f8; */
     padding: 15px;
     transition: 1sec;
-    background-color: #7f00ff;
+    background-color: #FF4A17;
     transform: translateY(-4px);
     z-index: 500;
     color: white;
@@ -378,7 +381,7 @@ button:hover{
     width: 1px;
     height: 10px;
     transition: 0.9s;
-    background-color: #7f00ff;
+    background-color: #FF4A17;
     margin-top: 8px;
 }
 
@@ -416,7 +419,7 @@ button:hover{
 .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
-    border-left: 2px solid #7f00ff;
+    border-left: 2px solid #FF4A17;
     position: relative;
 }
 
@@ -429,7 +432,7 @@ button:hover{
     left: -9px;
     top: 0;
     background: #fff;
-    border: 2px solid #7f00ff;
+    border: 2px solid #FF4A17;
 }
 
 .resume .resume-item h4 {
@@ -438,7 +441,7 @@ button:hover{
     font-weight: 600;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #7f00ff;
+    color: #FF4A17;
     margin-bottom: 10px;
 }
 
@@ -462,7 +465,7 @@ em{
 .resume-item h5{
     font-size: 16px;
     display: block;
-    background:white;
+    background:black;
     padding: 4px 4px;
     max-width: fit-content;
 }
@@ -486,7 +489,7 @@ em{
 .project-details ul{
     font-size: 20px;
     letter-spacing: 2px;
-    color: #7f00ff;
+    color: #FF4A17;
    
 }
 
@@ -502,14 +505,41 @@ em{
 
 .project-details ul li a{
     text-decoration: none;
-   
+    color: #FF4A17;
 }
 
+.project-row{
+    display: flex;
+    justify-content: space-around;
+    
+}
 
+.project-img{
+    margin-top: 26px;
+}
+
+@media screen and (max-width:700px){
+    .project-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-img{
+        padding-left:12px ;
+    }
+
+    .project-img img{
+        width: 340px;
+        height: 250px;
+    }
+}
 
 
 /*-------------------------------------------contact-form css start----------------*/
 
+.Contact{
+     margin-top: 4rem;
+}
 .contact-left{
     flex-basis:35%;
 
@@ -537,13 +567,13 @@ form input,form textarea{
     width: 100%;
     text-align: center;
     padding: 25px 0px;
-    background-color:#7f00ff;
+    background-color:#FF4A17;
     font-weight: 300;
     margin-top:20px;
 }
 
 .copyright i{
-    color: #ff004f;
+    color: red;
 }
 
 .contact-left{
@@ -552,7 +582,7 @@ form input,form textarea{
 }
 
 .social-icons a{
-    color: #3d535f;
+    color: #fff;
     display: block;
     font-size: 40px;
     margin: 5vw;
@@ -562,7 +592,7 @@ form input,form textarea{
 }
 
 .social-icons a:hover{
-    color: #7f00ff;
+    color: #FF4A17;
     transform: translateY(-5px);
 }
 
@@ -628,7 +658,10 @@ form input,form textarea{
         z-index: 50;
     } */
 
-    
+    button{
+        padding: 7px 7px;
+        font-size: 18px;
+    }
 
     .navitems ul li a{
         font-size: 4vw;
@@ -641,16 +674,16 @@ form input,form textarea{
       }
 
     .header-details::before {
-        height: 400px;
-        width: 400px;
+        height: 380px;
+        width: 370px;
     }
 
-    .header-details,.btns{
+    .header-details{
         flex-wrap: wrap;
     }
 
     .name{
-        font-size: 4rem;
+        font-size: 3.2rem;
     }
     .col0{
         width: 84vw;
@@ -699,7 +732,7 @@ form input,form textarea{
         display: block;
         width: 40px;
         height: 3px;
-        background: #7f00ff;
+        background: #FF4A17;
         left: calc(50% - 20px);
         padding-left: -5vw;
        
@@ -750,11 +783,11 @@ form input,form textarea{
     }
 
     .skills .progress .val {
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .progress span{
-        font-size: 1.3rem;
+        font-size: 1rem;
     }
 
     .social-icons{
@@ -771,7 +804,15 @@ form input,form textarea{
     }
 
     .social-icons a:hover{
-        color: #7f00ff;
+        color: #FF4A17;
         transform: translateY(-5px);
+    }
+
+    .Contact {
+        margin-top: 16rem;
+    }
+
+    .copyright p{
+        font-size: 14px;
     }
 }

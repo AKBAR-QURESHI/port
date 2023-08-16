@@ -1,10 +1,9 @@
-const bar = document.getElementsByClassName(".fa-bars");
-const menu = document.querySelector(".navitems");
 
-bar.addEventListener("click",()=>{
-    menu.style.display == "flex";
 
-});
+ function navOpen(){
+    navBar = document.querySelector(".nav-bar");
+    navBar.classList.toggle("active-1");
+}
 
 
 function sendmail(){

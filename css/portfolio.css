@@ -604,6 +604,7 @@ form input,form textarea{
 
     body{
         overflow: auto;
+        padding-right: 0;
     }
 
     .logo{
@@ -612,13 +613,17 @@ form input,form textarea{
         margin-left: -35px;
     }
 
+    /* .header{
+        position: fixed;
+        top: 0;
+        z-index: 500;
+    } */
+
     nav{
         margin-top: -10px;
     }
 
-    
-
-    nav .fa-bars{
+    .menu-bar .fa-bars{
         display:block; 
         color: white;
         padding: 1vw 1.5vw;
@@ -638,11 +643,37 @@ form input,form textarea{
     .menu-bar i{
         font-size: 6vw;
     }
-
-    .nav-bar{
-        display: none;
+    .nav-bar.active-1{
+        height: 450px;
     }
 
+    .nav-bar.active-1 ul{
+        opacity: 1;
+    }
+    .nav-bar{
+        height:0px;
+        position: absolute;
+        top: 90px;
+        right:0;
+        left: 0;
+        width: 100vw;
+        background: #000;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 60px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar ul li{
+        margin: 1.2rem;
+    }
       /* .navitems{
         display: flex;
         flex-direction: column;
@@ -663,9 +694,9 @@ form input,form textarea{
         font-size: 18px;
     }
 
-    .navitems ul li a{
-        font-size: 4vw;
-        margin: 4px;
+    .navitems li a{
+        font-size: 1.2rem;
+        color:white;
        
     }
 

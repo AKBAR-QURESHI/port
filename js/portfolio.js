@@ -27,8 +27,18 @@ emailjs.send(serviceID,templateID,params)
         alert("your message sent successfully");
     })
     .catch((err) => console.log(err));
-
 }
+
+
+const cursor = document.querySelector(".cursor");
+const btn = document.querySelector("button");
+
+window.addEventListener("mousemove", (e) => {
+  console.log(e);
+  cursor. style.top = `${e.pageY - 4}px`;
+  cursor. style.left = `${e.pageX - 4}px`;
+});
+
 
 // function myfunction(){
 //     const menu = document.querySelector(".navitems");
